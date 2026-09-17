@@ -1244,3 +1244,22 @@
   color: var(--color-muted);
   text-decoration: none;
 }
+
+@media (max-width: 720px) {
+  .device-fit,
+  .device {
+    width: 100vw;
+    height: 100dvh;
+    height: 100svh;
+    --fit: 1;
+    --bezel: 0px;
+    --glass-radius: 0px;
+    --device-radius: 0px;
+    border-radius: 0;
+    transform: none;
+    box-shadow: none;
+  }
+  .device__side, .status-bar, .home-bar, .desk-entry { display: none; }
+  .bezel, .glass, .halo, .halo__bloom { border-radius: 0; padding: 0; }
+  .halo { inset: 0; }
+}
